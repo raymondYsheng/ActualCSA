@@ -1,0 +1,73 @@
+<style>
+  *{
+    font-family: 'ADLaM Display';
+    margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+    /* Your CSS styles here */
+    .site-header {
+      background: rgb(2,0,36);
+      background: linear-gradient(344deg, rgba(2,0,36,1) 0%, rgba(4,3,65,1) 12%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+      color: white;
+      padding: 30px 0;
+      font-size:30px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .site-header nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .site-header nav li {
+      display: inline;
+      margin: 0 10px; /* Adjust the margin as needed */
+    }
+
+    .site-header nav a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .site-header nav a:hover {
+      color: #8000f7;
+    }
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+
+<header class="site-header">
+<link rel="stylesheet" href="header.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap" rel="stylesheet">
+  <div id="header">
+    <nav>
+      <ul>
+        <li class="fork"><a href="{{site.baseurl}}/">Home</a></li>
+        <li class="fork"><a href="{{site.baseurl}}/csp">Schedule</a></li>
+        <li class="fork"><a href="{{site.baseurl}}/blogs">Blogs</a></li>
+        <li class="fork"><a href="{{site.baseurl}}/pblvocab">PBL Vocab</a></li>
+        <li class="title"><a href="{{ site.github.repository_url}}#readme">View On GitHub</a></li>
+      </ul>
+    </nav>
+  </div><!-- end header -->
+</header>
